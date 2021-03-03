@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.Net - We have books </title>
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-book" style="font-size: 1.5rem;"></i> Book.Net
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Digite o nome do livro" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="bg-light">
+            <section class="container p-3">
+                <h1>Cadastro de Cliente</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Nome</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Endereço de E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu endereço de e-mail">
+                        <div id="emailHelp" class="form-text">Nós nunca iremos compartilhar seu email com ninguém</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF</label><br>
+                        <input type="text" class="form-control bi-phone" id="cpf" placeholder="Ex.: 000.000.000-00" maxlength="11">
+                    </div>
+                    <div class="mb-3">
+                        <label for="birth" class="form-label">Data de Nascimento</label><br>
+                        <input type="date" class="form-control" id="data">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="(99)99999-9999">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="p-3 bg-dark text-white">
+            <div class="container">
+                <p class="float-end">
+                    <a class="text-white" href="#">Voltar ao topo</a>
+                </p>
+                <p>Book.Net &copy; Todos os direitos reservados 2021.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.Net</title>
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-book" style="font-size: 1.5rem;"></i> Book.Net
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Digite o nome do livro" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="bg-light">
+            <section class="container p-3">
+                <h1> Listagem de Livros </h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="registro.html">Cadastrar Livro</a>
+                    </li>
+                </ul>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ISBN</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Editora</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col">Publicado em</th>
+                            <th scope="col">Assunto</th>
+                            <th scope="col">Comprar/Alugar</th>
+                            <th scope="col">Nacional/Importado</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Preço Comprar</th>
+                            <th scope="col">Preço Alugar</th>
+                            <th scope="col">Preço Renovação Aluguel</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">325476</th>
+                            <td>Ruby</td>
+                            <td>Aliabooks</td>
+                            <td>Ivan Mecenas</td>
+                            <th>20/10/1997</th>
+                            <td>Investigando a Linguagem</td>
+                            <td>Comprar</td>
+                            <td>Nacional</td>
+                            <th>10</th>
+                            <td>200,00</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary"> <i class="bi bi-file-earmark-x"></i> </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+
+        <footer class="fixed-bottom p-3 bg-dark text-white">
+            <div class="container">
+                <p class="float-end">
+                    <a class="text-white" href="#">Voltar ao topo</a>
+                </p>
+                <p>Book.Net &copy; Todos os direitos reservados 2021.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
