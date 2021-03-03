@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.Net</title>
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <body>
+
+
+        <!-- CABEÇALHO  -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <!-- ÍCONE + BOOK.NET -->
+                        <i class="bi bi-book" style="font-size: 1.5rem;"></i> Book.Net
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Digite o nome do livro" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="bg-light">
+            <section class="container p-3">
+                <h1> Acervo de Livros </h1>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/img/Ruby.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ruby</h5>
+                                <p class="card-text">Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada e desenvolvida no Japão em 1995, por Yukihiro "Matz" Matsumoto,
+                                    para ser usada como linguagem de script.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="cadastro.html" class="btn btn-primary">Comprar</a>
+                                <a href="cadastro.html" class="btn btn-info">Alugar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/img/c.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">C#</h5>
+                                <p class="card-text">C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras
+                                    linguagens de programação, como Object Pascal e, principalmente, Java.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="cadastro.html" class="btn btn-primary">Comprar</a>
+                                <a href="cadastro.html" class="btn btn-info">Alugar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/img/python.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                                <p class="card-text">Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="cadastro.html" class="btn btn-primary">Comprar</a>
+                                <a href="cadastro.html" class="btn btn-info">Alugar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="/img/java.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Java</h5>
+                                <p class="card-text">Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle
+                                    Corporation.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="cadastro.html" class="btn btn-primary">Comprar</a>
+                                <a href="cadastro.html" class="btn btn-info">Alugar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-3 bg-dark text-white">
+            <div class="container">
+                <p class="float-end">
+                    <a class="text-white" href="#">Voltar ao topo</a>
+                </p>
+                <p>Book.Net &copy; Todos os direitos reservados 2021.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
